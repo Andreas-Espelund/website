@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,6 +23,8 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+
 
 .App-link {
   color: #61dafb;
@@ -35,4 +37,293 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+div,p,h1{
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+}
+ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+
+
+nav{
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0%;
+  background-color: #000000;
+  color: white;
+}
+footer p{
+  margin: 10px;
+  width: fit-content;
+}
+label,
+input,
+textarea,
+select,
+button {
+  font-size: 1.3rem;
+  line-height: 1.2
+}
+
+form {
+  width: 30em;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+form div {
+  margin-top: 1rem;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+form label {
+  color: rgb(231, 231, 231);
+  margin-bottom: 0.4rem;
+  display: inline-block;
+}
+
+.logo{
+  filter: invert(48%) sepia(99%) saturate(336%) hue-rotate(160deg) brightness(96%) contrast(90%);
+}
+form
+input,
+textarea {
+  padding: 0.4rem;
+  width: 100%;
+  background-color: rgb(231, 231, 231);
+  border: 1px solid;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+form
+input:focus,
+textarea:focus {
+  outline: 2px solid #3e9cdb;
+}
+
+form button {
+  background-color: #3e9cdb;
+  color: white;
+  border: 2px solid #3e9cdb;
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 10px;
+  transition: border-radius 0.3s ease, background 0.2s ease, font-weight 0.2s ease;
+}
+
+form button div{
+  text-align: center;
+  align-items: center;
+  margin: 0;
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+form
+button:hover,
+form
+button:focus {
+  font-weight: 900;
+  border-radius: 50px;
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('./resources/background.png');
+}
+p{
+  width: 60%;
+}
+
+.center{
+  margin: auto;
+  width: 100%;
+}
+
+.musicpage{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 50px;
+  align-items: center;
+  width: fit-content;
+}
+
+.streamingbuttons{
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.streamingbuttons button{
+  box-sizing: border-box;
+  background-color: black;
+  border: 2px solid white;
+  box-sizing: border-box;
+  color: white;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 0px;
+  transition: border-radius 0.15s ease;
+}
+.streamingbuttons button:hover{
+  border-color: #3e9cdb;
+  font-weight: 900;
+  color: #3e9cdb;
+  border-radius: 10px;
+  
+}
+
+
+.album-player{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: fit-content;
+}
+
+.spotifyWrapper{
+  border-radius: 10px;
+}
+
+.socialbuttons{
+  width: fit-content;
+}
+.socialbuttons li{
+  border-radius: 30px;
+}
+
+.socialbuttons ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+}
+.socialbuttons img{
+  padding: 12px 15px;
+  transition: background-color 0.2s ease;
+
+}
+
+.socialbuttons img:hover{
+  filter: invert(48%) sepia(99%) saturate(336%) hue-rotate(160deg) brightness(96%) contrast(90%);
+}
+
+.pager{
+  margin: 50px ;
+  height: 100px;
+  width: 300px;
+  border: 2px solid red;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Courier new', serif;
+  font-weight: 400;
+}
+
+p, a, button{
+  font-family: 'Consolas';
+  font-weight: 100;
+}
+
+
+.largeButton {
+  background-color: black;
+  border: 2px solid white;
+  box-sizing: border-box;
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 0px;
+  transition: border-radius 0.15s ease;
+}
+.largeButton:hover{
+  border: 2px solid #3e9cdb;
+  font-weight: 900;
+  color: #3e9cdb;
+  border-radius: 30px;
+}
+
+.shopPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid red;
+  justify-content: space-evenly;
+  height: 400px;
+  width: 30%;
+  margin: auto;
+}
+
+.shopPage h1{
+  width: 100%;
+  font-size:xxx-large;
+}
+
+
+.card{
+  margin: 10px;
+  padding: 2px 12px;
+  background-color: aliceblue;
+  border-radius: 12px;
+  text-align: left;
+  width: fit-content;
+
+}
+
+.row{
+  border-radius: 12px;
+  width: 100%;
+  height: 600px;
+}
+.carousel{
+  margin: auto;
+  height: 600px;
+  width: 1000px;
+}
+
+.card p, .card h2{
+  color: black;
+}
+
+.homepage{
+  border: 1px solid red;
+  margin-top: 20px;
 }
