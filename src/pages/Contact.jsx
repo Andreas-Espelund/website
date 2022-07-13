@@ -1,9 +1,10 @@
 import React from 'react'
-
+import PageTitle from '../components/PageTitle';
 import { useState } from 'react'
 import { send } from 'emailjs-com';
 import { CircularProgress, Snackbar } from '@mui/material';
 import MuiAlert from '@mui/material/Alert';
+import LargeButton from '../components/LargeButton';
 
 export default function Contact() {
 
@@ -56,7 +57,7 @@ export default function Contact() {
 
   return (
     <div>
-      <h1>Contact us!</h1>
+      <PageTitle text="Contact us!"/>
       <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
           Message sendt!
@@ -114,9 +115,9 @@ export default function Contact() {
         </div>
       
         <div>
-          <button type="submit">
-          {loading?  <CircularProgress color="inherit"/> :<div>Submit</div>}
-          </button>
+          <LargeButton type="submit" >
+          {loading?  <CircularProgress color="inherit"/> :<div>SUBMIT</div>}
+          </LargeButton>
         </div>
       </form>
     </div>

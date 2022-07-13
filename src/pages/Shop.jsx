@@ -1,6 +1,8 @@
 import React from 'react'
 import LargeButton from '../components/LargeButton'
-import Socials from '../components/Socials'
+import Column from '../components/Column'
+import PageTitle from '../components/PageTitle';
+
 
 export default function Shop() {
 
@@ -9,11 +11,13 @@ export default function Shop() {
 };
 
   return (
-    <div className="shopPage">
+    <div className="page-holder">
 
-    <h1>JACKBOW STORE</h1>
-    <LargeButton text="norwegian shop" onClick={openInNewTab} url="https://d2shop.no/product-category/kvelertak/"/>
-    <LargeButton text="global shop" onClick={openInNewTab} url="https://eu.kingsroadmerch.com/kvelertak/"/>
+    <PageTitle text="Jackbow shop"/>
+    <Column>
+      <LargeButton text="norwegian shop" onClick={openInNewTab} url="https://d2shop.no/product-category/kvelertak/"/>
+      <LargeButton text="global shop" onClick={openInNewTab} url="https://eu.kingsroadmerch.com/kvelertak/"/>
+    </Column>
 
     </div>
   )

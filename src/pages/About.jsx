@@ -1,9 +1,13 @@
 import React from 'react'
-
+import { URLS } from '../values/videos'
+import VideoPager from '../components/VideoPager'
+import PageTitle from '../components/PageTitle'
 export default function About() {
   return (
     <div className="about">
-      <h1>About</h1>
+      <PageTitle text="About"/>
+      <VideoPager videos={URLS}/>
+
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Vivamus nec posuere metus, quis porta nisi. 
@@ -36,6 +40,9 @@ export default function About() {
         Vivamus nec posuere metus, quis porta nisi. 
         Quisque malesuada laoreet dui, in pretium augue porta at. 
     </p>
+
+    <p>Jackbow &copy; 2022</p>
+
     </div>
   )
 }

@@ -12,10 +12,12 @@ import {
   Route,
 } from "react-router-dom";
 import Socials from './components/Socials';
+import Videopage from './pages/Videopage';
 
 function App() {
   return (
     <div className="App">
+    <div className="Body">
       <Router>
       <Navigation/>
       <Routes>
@@ -24,14 +26,16 @@ function App() {
         <Route path="/about" element={<About/>}/>
         <Route path="/shop" element={<Shop/>}/>
         <Route path="/music" element={<Music/>}/>
+        <Route path="/videos" element={<Videopage/>}/>
       </Routes>
 
-      <footer className="footer">
-        <Socials/>
-        <p>Jackbow &copy; 2022</p>
-      </footer>
+      
       </Router>
     </div>
+    <footer className="footer">
+    <Socials/>
+  </footer>
+  </div>
   );
 }
 

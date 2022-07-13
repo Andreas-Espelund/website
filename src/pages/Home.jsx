@@ -1,15 +1,22 @@
 import React from 'react'
-import VideoPager from '../components/VideoPager'
+import PageTitle from '../components/PageTitle';
+import VideoPager from '../components/VideoPager';
+import logo from '../resources/logo.png'
 export default function Home() {
 
-  const videos = [
-    "https://www.youtube.com/embed/49RMVb7ltj0",
-    "https://www.youtube.com/embed/7tY0ygyWwEg",
-    "https://www.youtube.com/embed/49RMVb7ltj0"
-  ] 
+  
   return (  
-    <div className="homepage">
-      <VideoPager videos={videos}/>
+    <div className="page-holder">
+
+    <img className="band-logo" src={logo}/>
+    <div>
+    <ul className="mobile-nav">
+      <li><a href="Music">MUSIC</a></li>    
+      <li><a href="Shop">SHOP</a></li>  
+      <li><a href="Videos">VIDEOS</a></li>    
+      <li><a href="Contact">CONTACT</a></li>    
+      </ul>
+    </div>
     </div>
   )
 }
