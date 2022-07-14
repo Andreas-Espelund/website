@@ -19,7 +19,7 @@ export default function Navigation() {
     <nav className="header">
         <ul className="web-header">
             <li><a href="Music">MUSIC</a></li>    
-            <li><a href="Shop">SHOP</a></li>  
+            <li><a href="https://shop.jackbowband.com" target="_blank">SHOP</a></li>  
             <li><a href="/"><img className="logo" src={logo} width="100"/></a></li>    
             <li><a href="Videos">VIDEOS</a></li>    
             <li><a href="Contact">CONTACT</a></li>    

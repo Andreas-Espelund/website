@@ -105,7 +105,6 @@ li a:hover {
 }
 
 
-
 nav{
   display: flex;
   align-items: center;
@@ -129,7 +128,14 @@ button {
   border-radius: 0;
 }
 
-
+.video{
+  border: 1px solid black;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 40px 10px rgb(0, 0, 0, 0.6);
+  max-width: 90vw;
+  height: 578px;
+  
+}
 
 
 form {
@@ -384,16 +390,19 @@ p{
     width: 80vw;
   }
 
+  .video{
+    height: 30vh;
+  }
   
+  .largeButton{
+    height: 60px;
+  }
   
 
   .mobile-header{
-    display:flex;
-    flex-direction: row;
-    width: 90vw;
-    justify-content: center;
-    align-items: center;
+    display: block;
     margin: auto;
+    margin-top: 30px;
   }
 
   .videocard{
