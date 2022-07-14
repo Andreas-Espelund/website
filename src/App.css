@@ -101,7 +101,7 @@ nav ul li a {
 
 li a:hover {
   transform:translateY(-1px);
-  text-shadow: 1px 1px rgb(75, 75, 75);
+  text-shadow: 1px 1px rgb(248, 248, 248);
 }
 
 
